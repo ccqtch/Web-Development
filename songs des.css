@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+   
+}
+
+
+body {
+    background-image: linear-gradient(#000080, #800080);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.top5, ul, li {
+    background: none; /* make sure nothing here overrides/repeats the gradient */
+}
+    
+#body div ul{
+    transform: translateX(-17px);
+}

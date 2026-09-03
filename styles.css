@@ -1,0 +1,246 @@
+* {
+  margin: 0;              /* remove default outer spacing on every element */
+  padding: 0;              /* remove default inner spacing on every element */
+  box-sizing: border-box;  /* padding/border no longer inflate element size */
+}
+
+
+body {
+  font-family: Arial, sans-serif;   /* TEXT PROPERTY: sets the typeface.
+                                        Listing a fallback (sans-serif)
+                                        means "if Arial isn't available,
+                                        use any generic sans-serif font." */
+  line-height: 1.6;                 /* TEXT PROPERTY: space between lines
+                                        of text — improves readability
+                                        versus the cramped default of 1. */
+  color: #2b2d42;                   /* COLOR PROPERTY: default text color
+                                        for the whole page (a dark navy,
+                                        softer than pure black). */
+  background-color: #f7f7fb;        /* BACKGROUND PROPERTY: light page
+                                        background so white cards/sections
+                                        stand out against it. */
+}
+
+
+#site-header {
+  background-color: #2b2d42;  /* dark navy background band for the header */
+  color: #ffffff;              /* white text so it stays readable on navy */
+  padding: 30px 20px;          /* space INSIDE the header, before its edge */
+  text-align: center;          /* TEXT PROPERTY: centers the h1/p/nav text
+                                   — this is our modern replacement for the
+                                   old, deprecated <center> tag! */
+}
+
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Arial, sans-serif; /* a slightly friendlier
+                                                       font just for headings */
+  color: #2b2d42;
+}
+
+
+h2 {
+  margin-bottom: 12px;
+  border-bottom: 3px solid #ef233c;  /* a bold underline to separate
+                                         each section visually */
+  padding-bottom: 6px;
+  display: inline-block;             /* keeps the underline only as wide
+                                         as the heading text itself */
+}
+
+
+#site-header nav a {
+  color: #ffffff;
+  text-decoration: none;   /* TEXT PROPERTY: removes the default underline */
+  font-weight: bold;       /* TEXT PROPERTY: makes the nav links stand out */
+  margin: 0 6px;
+}
+
+
+#site-header nav > a:hover {
+  text-decoration: underline;  /* underline reappears only when hovering,
+                                   giving visitors a clear interactive cue */
+}
+
+main {
+  max-width: 800px;     /* keeps line lengths comfortable to read */
+  margin: 30px auto;    /* 30px top/bottom, "auto" left/right centers the
+                            whole block horizontally on the page */
+  padding: 0 20px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;   /* subtle box edge around each section */
+  border-radius: 8px;          /* rounds the box corners */
+  padding: 20px;
+  margin-bottom: 24px;         /* breathing room between stacked sections */
+}
+
+.profile-photo {
+  border-radius: 50%;         /* turns the square image into a circle */
+  border: 4px solid #ef233c;  /* a colored ring around the photo */
+  display: block;
+  margin: 0 auto 16px auto;   /* centers the image horizontally */
+}
+
+
+.skill-list {
+  list-style-type: square;   /* swap the default round bullet for a square */
+  padding-left: 24px;
+}
+
+.roadmap-list {
+  padding-left: 24px;
+}
+
+.roadmap-list li {
+  margin-bottom: 6px;   /* a little vertical gap between numbered steps */
+}
+
+dl {
+  margin-top: 8px;
+}
+
+dt {
+  font-weight: bold;   /* make each term stand out from its description */
+  color: #ef233c;
+}
+
+dd {
+  margin: 0 0 10px 20px;  /* indent the description under its term */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 16px 0;
+}
+
+figure {
+  margin: 12px 0;
+}
+
+figure img {
+  border-radius: 6px;
+  display: block;
+}
+
+figcaption {
+  font-size: 14px;         /* TEXT PROPERTY: smaller than body text */
+  color: #6c757d;
+  margin-top: 4px;
+  letter-spacing: 0.5px;   /* TEXT PROPERTY: slightly spaces out letters
+                               for a subtle "caption" feel */
+}
+
+video,
+audio {
+  display: block;
+  margin: 10px 0;
+  max-width: 100%;   /* never let media overflow past its section's edge */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;  /* merges double borders between cells into
+                                  a single clean line */
+  margin-top: 10px;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+
+th {
+  background-color: #2b2d42;
+  color: #ffffff;
+}
+
+tr:nth-child(even) td {
+  background-color: #f7f7fb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 4px;
+}
+
+input[type="submit"] {
+  background-color: #ef233c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;    /* shows a "clickable hand" cursor on hover */
+}
+
+input[type="submit"]:hover {
+  opacity: 0.85;   /* BACKGROUND/COLOR PROPERTY: opacity fades the button
+                       slightly on hover, giving clear visual feedback
+                       without needing a whole new background color */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select,
+textarea {
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 4px;
+  font-family: inherit;   /* keeps the same font as the rest of the page,
+                              instead of the browser's default form font */
+}
+
+
+aside {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  padding: 16px 20px;
+  background-color: #fff3b0;   /* BACKGROUND PROPERTY: soft yellow tint,
+                                   matches the <mark> highlight color from
+                                   our internal CSS demo in the head — ties
+                                   the two together visually */
+  border-radius: 8px;
+}
+
+aside a {
+  color: #2b2d42;
+}
+
+
+footer {
+  background-color: #2b2d42;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffd166;   /* a warm accent color so the email link is easy to spot
+                        against the dark footer background */
+}

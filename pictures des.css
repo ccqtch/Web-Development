@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    transform: translateX(35px);
+}
+
+.top5 ul {
+    display: flex;
+    gap: 00px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* so the offset has room to work with */
+    
+}
+
+.top5 li:nth-child(odd) {
+    transform: translateY(00px); /* shifts up */
+}
+
+.top5 li:nth-child(even) {
+    transform: translateY(275px); /* shifts down */
+}
+.top5 li{
+    border: solid;
+    border-color: #000000;
+
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(#000080, #800080);
+    background-attachment: scroll; /* make sure this isn't set to 'fixed' in a way causing clipping */
+}
+
+.top5, ul, li {
+    background: none; /* make sure nothing here overrides/repeats the gradient */
+}
+    
+
+.top5 video {
+    object-fit: cover;
+}
+
+.top5 li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; /* centers the caption text under the video */
+}
+
+.top5 li p {
+    margin: 8px 0 0 0; /* small gap between video and text */
+    color: #fff0f0; /* adjust to fit your gradient background */
+    font-size: 14px;
+}
+
+.top5 ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 275px; /* reserve space for the staggered offset */
+    margin: 0;
+    align-items: center;
+    transform: translateX(100px);
+}
+
+.top5 ul{
+    transform: translateX(10px);
+}
